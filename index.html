@@ -1,48 +1,74 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-
+html>
 <body>
-<h1>Welcome to Myflix!</h1>
-
-<video width="500" controls>
-<source src="http://35.230.152.195/myflix/PexelsVideos1.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.230.152.195/myflix/PexelsVideos2.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.230.152.195/myflix/PexelsVideos3.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.230.152.195/myflix/PexelsVideos4.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.230.152.195/myflix/PexelsVideos5.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.230.152.195/myflix/WomanWithUmbrellaWalking.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.189.113.22/myflix2/AircraftParking.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.189.113.22/myflix2/RollerCoaster.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="http://35.189.113.22/myflix2/ViewofCity.mp4" type="video/mp4">
-</video>
-
+<script>
+var = abc
+$.ajax({
+  dataType: "json",
+  url: http://35.189.125.152/myflix/videos,
+  data: data,
+  success: success
+console.log('it is coneected')
+});
+var Db = require('mongodb').Db,
+<script>
+var username = 'admin';
+var password = 'changeit';
+function user_auth(){
+jQuery.ajax({
+    url : "http://35.189.125.152/myflix/videos",
+    type : 'get',
+    //data : 'username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(pa
+ssword),
+    dataType : 'json',
+    beforeSend: function (xhr) {
+      xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));},
+    success : function(data) {
+        //error code
+          abc=console.log(data._embedded[0].video.ip);
+          floc= data._embedded[0].video.ip +data._embedded[0].video.file;
+          console.log(floc)
+    }})
+}
+function click(){
+  window.location = "abc";
+}
+</script>
+<h1 style="text-align:center; color:black; font-size:60px"> Welcome to Myflix!
+</h1>
+<img value=" onclick" onclick = "window.location = 'http://35.230.152.195/trainstation.htm
+l'"
+src="http://35.242.139.30/myflixImages/trainstation.jpg" width="400"
+height="225" alt="train ">
+<img  value=" onclick" onclick = "window.location = 'http://35.230.152.195/walking.html'"
+ src="http://35.242.139.30/myflixImages/walking.jpg"
+ width="400" height="225" alt="walking">
+<img  value=" onclick" onclick = "window.location = 'http://35.230.152.195/lilies.html'"  
+style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/lilies.jpg"
+ width="400" height="225" alt="lilies">
+<img  value=" onclick" onclick = "window.location = 'http://35.230.152.195/highstreet.html
+'"  style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/highstreet.jpg"
+ width="400" height="225" alt="highstreet">
+<img  value=" onclick" onclick = "window.location = 'http://35.230.152.195/sailing.html'" 
+ style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/sailing.jpg"
+ width="400" height="225" alt="sailing">
+<img  value=" onclick" onclick = "window.location = 'http://35.230.152.195/petersonshop.ht
+ml'"  style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/petersonshop.jpg"
+ width="400" height="225" alt="sailing">
+  <img  value=" onclick" onclick = "window.location = 'http://35.189.113.22/aircraft.html'" 
+ style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/aircraft.jpg"
+ width="400" height="225" alt="aircraft">
+<img  value=" onclick" onclick = "window.location = 'http://35.189.113.22/rollercoaster.ht
+ml'"  style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/rollercoaster.jpg"
+ width="400" height="225" alt="rollercoaster">
+<img  value=" onclick" onclick = "window.location = 'http://35.189.113.22/cityview.html'" 
+ style =  class="round-corners"
+ src="http://35.242.139.30/myflixImages/cityview.jpg"
+ width="400" height="225" alt="cityview">
 </body>
 </html>
-
